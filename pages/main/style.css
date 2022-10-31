@@ -4,6 +4,7 @@
 }
 ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 a {
@@ -13,7 +14,8 @@ a {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --orange: linear-gradient(rgba(249, 128, 75) 0%, rgba(254, 144, 19) 100%);
+  --linear-orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --yellow: #ffee2e;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -31,6 +33,8 @@ h1 {
   font-size: 19px;
   line-height: 23px;
   font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 /*----- HEADER STYLES -----*/
 header {
@@ -43,7 +47,18 @@ header .small-container {
   padding: 14px 0;
 }
 .logo {
+  width: 82px;
+  height: 52px;
   margin-right: 63px;
+  border: 1px solid var(--white);
+  padding: 3.55px 4.75px;
+
+  position: relative;
+}
+.logo img {
+  position: absolute;
+  left: 13.23px;
+  top: 24.64px;
 }
 .nav {
   display: flex;
@@ -60,4 +75,60 @@ nav a:focus {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* text-fill-color: transparent; */
+}
+/*----- HERO STYLES -----*/
+.hero {
+  background-image: url('../../assets/images/panda.png');
+  height: 780px;
+}
+.hero_container {
+  position: relatie;
+  width: 573.3px;
+  margin-right: auto;
+}
+.hero_content {
+  width: 500.3px;
+  text-align: center;
+
+  position: absolute;
+  top: 86px;
+  right: 220px;
+  z-index: 3;
+}
+.circle {
+  position: absolute;
+  left: calc(50% - 465px / 2 + 239.5px);
+  top: 92px;
+
+  width: 465px;
+  height: 465px;
+
+  background: var(--linear-orange);
+  border-radius: 50%;
+  z-index: 2;
+}
+.hero p {
+  text-transform: uppercase;
+  color: var(--white);
+
+  font-size: 106.5px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.yellow {
+  color: var(--yellow);
+}
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--linear-orange);
+  border: 1px solid var(--linear-orange);
+  border-radius: 25px;
+
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  line-height: 22.4px;
+  padding: 16px auto;
+  width: 298px;
+  height: 54px;
 }
