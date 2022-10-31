@@ -1,0 +1,63 @@
+/*----- COMMON STYLES -----*/
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --orange: linear-gradient(rgba(249, 128, 75) 0%, rgba(254, 144, 19) 100%);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 22px;
+}
+.big-container {
+  width: 1600px;
+  margin: 0 auto;
+}
+.small-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 400;
+}
+/*----- HEADER STYLES -----*/
+header {
+  background: var(--black);
+  color: var(--white);
+}
+header .small-container {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+}
+.logo {
+  margin-right: 63px;
+}
+.nav {
+  display: flex;
+  gap: 58px;
+  font-weight: 500;
+}
+.copyright {
+  margin-left: auto;
+  font-weight: 500;
+}
+nav a:focus {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
