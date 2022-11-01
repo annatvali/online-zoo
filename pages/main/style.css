@@ -25,10 +25,21 @@ p {
   --white: #ffffff;
   --linear-orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   --linear-orange-2: linear-gradient(#f9804b 0%, #fe9013 100%);
+  --purple-gradient: linear-gradient(
+    226deg,
+    #febdab 6.48%,
+    #f3a9f8 22.51%,
+    #e0d8f0 45.57%,
+    #eaf7fe 82.33%,
+    #eaf7fe 99.1%
+  );
   --yellow: #ffee2e;
   --orange: #fe9013;
-
   --gray: #333b41;
+  --fossil-gray: #767474;
+  --range-gray: #f5f7f6;
+  --light-gray: #bdbdbd;
+  --hover-orange-btn: #e47209;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -48,7 +59,9 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
-
+.btn:hover:hover {
+  background: var(--hover-orange-btn);
+}
 /*----- HEADER STYLES -----*/
 header {
   background: var(--black);
@@ -132,10 +145,10 @@ nav a:focus {
   color: var(--yellow);
 }
 .btn {
+  border: none;
   cursor: pointer;
   color: var(--white);
   background: var(--linear-orange);
-  border: 1px solid var(--linear-orange);
   border-radius: 25px;
 
   text-transform: uppercase;
@@ -188,7 +201,7 @@ nav a:focus {
 
 /*----- PICK-AND-FEED STYLES -----*/
 .pick-and-feed {
-  background: linear-gradient(
+  background-image: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
       #febdab 100.95%,
@@ -306,8 +319,31 @@ nav a:focus {
 }
 
 /*----- TESTIMONIALS STYLES -----*/
+.testimonials {
+  position: relative;
+}
+.testimonials .small-container {
+  margin: 140px 220px 180px 220px;
+}
 .testimonials h3 {
   color: var(--gray);
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+
+  margin-bottom: 47px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.card-box {
+  background: var(--purple-gradient);
+  border-radius: 20px;
+  padding: 2px;
 }
 .card {
   width: 268px;
@@ -315,6 +351,7 @@ nav a:focus {
   border-radius: 20px;
 
   padding: 15px 15px 19px 16px;
+  height: 100%;
 }
 .card-header {
   display: flex;
@@ -323,4 +360,50 @@ nav a:focus {
   align-items: flex-start;
 
   margin-bottom: 11px;
+}
+.user-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.user-info {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: var(--light-gray);
+  margin-top: 1px;
+}
+.card-p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: var(--fossil-gray);
+}
+.range-box {
+  text-align: center;
+}
+input[type='range'] {
+  width: 599px;
+  height: 8px;
+  cursor: pointer;
+
+  border: 1px solid #010101;
+  border-radius: 5px;
+
+  color: var(--orange);
+  background: var(--range-gray);
+
+  margin: 21px 0 31px;
+}
+.testimonials .btn {
+  border-radius: 5px;
+}
+.leaf {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  /* transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0); */
 }
