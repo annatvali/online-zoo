@@ -95,6 +95,7 @@ button {
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
+  overflow-x: hidden;
 }
 .container {
   width: 1600px;
