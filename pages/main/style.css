@@ -92,21 +92,25 @@ button {
   --hover_orange_btn: #e47209;
   --active_green: #4b9200;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
   overflow-x: hidden;
+  /* width: 100%; */
 }
 .container {
   width: 1600px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 .wrapper {
   width: 1160px;
   margin: 0 auto;
 }
 h1 {
+  color: var(--white);
   font-size: 19px;
   line-height: 23px;
   font-weight: 400;
@@ -148,13 +152,12 @@ h1 {
 .btn[disabled] {
   background: var(--gray);
 }
-input[type='email']:ivalid:focus {
-  border: 1px solid var(--rad);
+#input-submit:hover {
+  background: var(--light_gray);
 }
 /*----- HEADER STYLES -----*/
 header {
   background: var(--black);
-  color: var(--white);
 }
 header .wrapper {
   display: flex;
@@ -691,6 +694,7 @@ input[type='submit'] {
   line-height: 22.4px;
   text-transform: capitalize;
 }
+
 input:focus {
   outline: none;
 }
