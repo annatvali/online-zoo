@@ -188,6 +188,7 @@ header .wrapper {
 .copyright {
   margin-left: auto;
   font-weight: 500;
+  color: var(--white);
 }
 nav a:focus {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
