@@ -1,0 +1,21 @@
+@import '../main/style.css';
+
+.donate-hero {
+  height: 390px;
+}
+.donate-pick-and-feed {
+  margin-top: 40px auto 180px;
+}
+.pick-and-feed article {
+  color: var(--white);
+}
+.pick-and-feed__h3 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+}
+h3.pick-and-feed__h3:nth-child(2) {
+  color: var(--orange);
+  margin: 40px 0 60px;
+}
