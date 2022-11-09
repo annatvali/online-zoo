@@ -154,6 +154,7 @@ h1 {
 }
 #input-submit:hover {
   background: var(--light_gray);
+  cursor: pointer;
 }
 /*----- HEADER STYLES -----*/
 header {
@@ -454,6 +455,16 @@ img[alt~='meat'] {
   line-height: 58px;
 
   margin-bottom: 30px;
+}
+.pick-and-feed__h2 {
+  color: var(--orange);
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  margin-bottom: 30px;
   margin-left: -40px;
 }
 .pick-and-feed__h3 {
@@ -530,11 +541,11 @@ img[alt~='meat'] {
   padding-top: calc((168px - 53px) / 2);
   width: 130px;
 }
-.pick-and-feed form {
+/* .pick-and-feed form {
   text-align: center;
   margin-top: 60px;
   margin-left: -40px;
-}
+} */
 .btn-donate-frame {
   margin-top: 60px;
   text-align: center;
@@ -675,8 +686,8 @@ input[type='email'] {
   background: none;
   border: 1px solid var(--orange);
   border-radius: 2px;
-  margin-right: 10px;
-  margin-top: 14px;
+  margin-right: 6px;
+  margin-top: 15px;
   caret-color: transparent;
   color: var(--white);
 }
