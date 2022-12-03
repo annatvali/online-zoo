@@ -55,3 +55,15 @@ if (mediaQuery_658.matches) {
   petsArrows.style.display = 'none';
   petsGallery.style.rowGap = '20px';
 }
+
+// swap green arrows instead of black
+
+const gridArr = document.querySelectorAll('.grid-arr');
+const gridArrImgs = document.querySelectorAll('.grid-arr img');
+const mediaQuery_768 = window.matchMedia('(max-width: 768px)');
+
+if (mediaQuery_768.matches) {
+  for (let i = 0; i < gridArr.length; i++) {
+    gridArrImgs[i].setAttribute('src', '../../assets/images/green-arr.svg');
+  }
+}

@@ -449,8 +449,9 @@ img[alt~='meat'] {
   /* backdrop-filter: blur(2px); */
   border-radius: 20px;
   padding: 41px 57px 59px 99px;
+  /* max-width: 1160px; */
 }
-.pick-and-feed h2 {
+.pick-and-feed__h2 {
   color: var(--orange);
   text-align: center;
 
@@ -478,7 +479,7 @@ img[alt~='meat'] {
   font-weight: 400;
   font-size: 36px;
   line-height: 47px;
-  margin-bottom: 40px;
+  margin: 40px 0 40px;
   margin-left: -45px;
 }
 .pick-and-feed b {
@@ -493,12 +494,13 @@ img[alt~='meat'] {
   margin-bottom: 40px;
 }
 .pick-and-feed__strong {
+  margin-bottom: 10px;
+}
+.pick-and-feed__strong strong {
   font-weight: 500;
   line-height: 21px;
 
   color: var(--black_blue);
-
-  margin-bottom: 10px;
 }
 .peak-and-feed__p {
   line-height: 21px;
@@ -524,21 +526,23 @@ img[alt~='meat'] {
   align-items: center;
   justify-content: center;
 }
-.white-box ~ p {
+.howitworks__p {
   padding-top: 30px;
   color: var(--black_blue);
 }
-.grid {
+.howitworks-grid {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  justify-content: center;
   align-items: center;
-  padding: 0 99px;
+  /* padding: 0 99px; */
+  margin-left: -42px;
 }
-.grid > div {
+.howitworks-grid > div {
   width: 168px;
   height: 244px;
 }
-.grid .grid-arr {
+.grid-arr {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -842,6 +846,9 @@ input:invalid:focus + #input-submit {
     width: 295px;
     left: calc((100% - 295px) / 2);
   }
+  .pick-and-feed {
+    padding: 30px 30px 50px;
+  }
 }
 /*optional breakpoint*/
 @media screen and (max-width: 1220px) {
@@ -927,6 +934,18 @@ input:invalid:focus + #input-submit {
   .pets-btn-wrapper {
     padding-bottom: 140px;
   }
+  .howitworks-grid {
+    margin-left: 0;
+  }
+  .pick-and-feed_box {
+    padding: 30px 48px 50px 49px;
+  }
+  .pick-and-feed b {
+    margin-bottom: 20px;
+  }
+  .pick-and-feed__h2 {
+    margin-left: 0;
+  }
 }
 /*optional breakpoint*/
 @media screen and (max-width: 999px) {
@@ -961,6 +980,23 @@ input:invalid:focus + #input-submit {
   }
   .header__copyright {
     font-weight: 400;
+  }
+  .pick-and-feed {
+    padding: 20px 0;
+  }
+  .pick-and-feed_box {
+    padding: 10px 20px 60px;
+  }
+  .howitworks-grid .grid-arr {
+    position: relative;
+    width: 42px;
+  }
+  .grid-arr img {
+    width: 63.12px;
+    height: 69.66px;
+    position: absolute;
+    bottom: calc(100% - 69.66px / 2);
+    /* left: calc(100% - 63.12px / 2); */
   }
 }
 @media screen and (max-width: 640px) {
@@ -1113,6 +1149,33 @@ input:invalid:focus + #input-submit {
     margin-top: 0;
     padding: 60px 0 100px;
   }
+  .pick-and-feed__h2 {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .pick-and-feed b {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .pick-and-feed__p {
+    margin-bottom: 0;
+  }
+  .pick-and-feed__h2 {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .pick-and-feed__h3 {
+    margin: 30px 0 20px;
+  }
+  .btn-donate-frame {
+    margin: 40px 0 0;
+  }
+  .pick-and-feed_box {
+    padding: 20px 0 40px;
+  }
 }
 /* optional breakpoint */
 @media screen and (max-width: 600px) {
@@ -1159,6 +1222,46 @@ input:invalid:focus + #input-submit {
   .pets__container {
     background-position: left -30px bottom, right 0 bottom;
     background-size: 72px, 71px;
+  }
+  .pick-and-feed {
+    padding: 20px 10px;
+  }
+  .howitworks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+  }
+  .howitworks-grid .grid-arr {
+    width: min-content;
+    height: 69.66px;
+    align-self: self-end;
+    padding: 0;
+  }
+  .grid-arr > img {
+    transform: rotate(0.25turn);
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+  .pick-and-feed__h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .pick-and-feed__h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 20px 0;
+  }
+  .howitworks__p {
+    padding-top: 10px;
+  }
+  .pick-and-feed__p,
+  .pick-and-feed strong {
+    display: none;
+  }
+  .pick-and-feed b {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
   }
 }
 /* optional breakpoint */
