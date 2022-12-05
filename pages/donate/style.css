@@ -11,10 +11,10 @@
   align-items: center;
 }
 .donate-hero {
+  background: url(../../assets/images/panda.png) center center no-repeat;
   height: 390px;
-  background-position: center center;
-  margin-top: -3px;
 }
+
 .donate-pick-and-feed {
   padding: 1px 30px 180px;
   color: var(--white);
@@ -310,9 +310,7 @@ input[name='subscription-input']:checked::before {
 
 @media screen and (max-width: 1000px) {
   .donate-hero {
-    background-size: auto;
-    background-position: -173px center;
-    margin-top: -0px;
+    background: url(../../assets/images/panda.png) -170px center no-repeat;
   }
 
   .donate-pick-and-feed {
@@ -419,9 +417,9 @@ input[name='subscription-input']:checked::before {
 @media screen and (max-width: 640px) {
   .donate-hero {
     height: 335px;
-    background-position: -351px center;
-    background-size: inherit;
-    width: 100%;
+    background-position: 23px 0px;
+    background-size: cover;
+    transform: scale(2);
   }
   .donate-pick-and-feed__box {
     padding: 30px 0 31px;
@@ -527,6 +525,10 @@ input[name='subscription-input']:checked::before {
 @media screen and (max-width: 320px) {
   .donate-hero {
     height: 187px;
+    height: 187px;
+    background-position: 5px 0px;
+    background-size: cover;
+    transform: scale(2);
   }
   .donate-pick-and-feed__box {
     padding: 20px 0 18px;
