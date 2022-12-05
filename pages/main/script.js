@@ -48,13 +48,13 @@ if (mediaQuery_320.matches) {
 }
 
 // remove pets arrow buttons while pets gallery grid becomes 1 column
-const petsGallery = document.querySelector('.pets-gallery');
-const petsArrows = document.querySelector('.pets-arrows');
-const mediaQuery_658 = window.matchMedia('(max-width: 658px)');
-if (mediaQuery_658.matches) {
-  petsArrows.style.display = 'none';
-  petsGallery.style.rowGap = '20px';
-}
+// const petsGallery = document.querySelector('.pets-gallery');
+// const petsArrows = document.querySelector('.pets-arrows');
+// const mediaQuery_658 = window.matchMedia('(max-width: 658px)');
+// if (mediaQuery_658.matches) {
+//   petsArrows.style.display = 'none';
+//   petsGallery.style.rowGap = '20px';
+// }
 
 // swap green arrows instead of black
 
