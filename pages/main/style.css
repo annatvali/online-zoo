@@ -399,7 +399,7 @@ nav a:focus {
 }
 .pets-card:hover .pets-card__name,
 .pets-card:hover .pets-card__location {
-  transform: translateY(-250px);
+  transform: translateY(-150px);
   color: var(--white);
   transition: 0.8s;
   z-index: 99;
